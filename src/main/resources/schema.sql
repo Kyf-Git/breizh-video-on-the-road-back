@@ -1,0 +1,10 @@
+CREATE SCHEMA backtestdb AUTHORIZATION SA;
+
+USE backtestdb;
+
+CREATE TABLE village (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NOT NULL,
+  post_code VARCHAR(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+);
